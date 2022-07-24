@@ -1,0 +1,126 @@
+@mixin flexBox($flexDirection, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $flexDirection !important;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+.micrositesTitle {
+  color: #062C41;
+  font-size: 14px;
+  font-weight: bold;
+}
+.micrositesdraftbutton {
+  color: #707070;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  width: 80px;
+  text-align: center;
+  margin-top: 10px;
+}
+.micrositeshrline {
+  border: 2px solid #707070;
+  width: 100%;
+}
+.micrositesformdiv {
+  padding: 20px;
+}
+.micrositesuploadbutton {
+  background-color: #F2F2F2;
+  border-radius: 6px;
+  padding: 3px;
+  text-align: center;
+  color: #F4AB33;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.micrositesuploadplusbutton {
+  div {
+    width: 100%;
+    @include flexBox(row, center, center);
+    margin-top: 5px;
+  }
+}
+.micrositesinputdivtag {
+  width: 80%;
+}
+.micrositesdesignsingleinputdivtag {
+  width: 40%;
+}
+.micrositesdesignmultipleinputdivtag {
+  width: 80%;
+}
+.micrositesinformationinputdivtag {
+  width: 60%;
+}
+.micrositesdesignradiobuttonsdiv {
+  font-size: 12px;
+  color: #979797;
+  font-weight: bold;
+  @include flexBox(row, flex-start,flex-start);
+  .ant-radio-wrapper {
+    @include flexBox(row, flex-start, center);
+    line-height: 3;
+  }
+  .ant-radio-wrapper-checked {
+    .ant-radio-checked {
+      .ant-radio-inner {
+        border-color: #F4AB33;
+      }
+      .ant-radio-inner::after {
+        background-color: #F4AB33;
+      }
+    }
+  }
+}
+.micrositesdesignremovetab {
+  color: #062C41;
+  @include flexBox(row, center, center);
+  font-size: 30px;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #062C41;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+}
+.micrositesinformationninputlogictag {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 60%;
+}
+.micrositesdesignremovemaintab {
+  position: absolute;
+  margin-top: 20px;
+  right: 0px;
+  z-index: 1100;
+  cursor: pointer;
+}
+.secondmicrositesdesignremovemaintab {
+  position: absolute;
+  margin-top: -50px;
+  right: 0px;
+  z-index: 1100;
+  cursor: pointer;
+}
+.micrositescountvalue {
+  // :nth-child(0) {
+
+    display: none;
+  // }
+}
+.micrositesaddinformationcomponents {
+  margin-top: 10px;
+  color: #292929;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  background: linear-gradient(to right, #BCBCBC 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(#BCBCBC 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #BCBCBC 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(#BCBCBC 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: top, right, bottom, left;
+  background-repeat: repeat-x, repeat-y;
+  background-size: 10px 1px, 1px 10px;
+}

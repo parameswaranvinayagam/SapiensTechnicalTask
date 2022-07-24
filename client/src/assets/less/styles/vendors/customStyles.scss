@@ -1,0 +1,320 @@
+@import "./_customVariables.scss";
+
+@mixin flexBox($flexDirection, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $flexDirection !important;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+.searbarbuttonWidthHeight,
+.searbarbuttonWidthHeight:hover,
+.searbarbuttonWidthHeight:focus {
+  height: max-content;
+  width: 300px;
+  padding: 6px;
+  border-radius: 4px !important;
+  border: 1px solid $vs-smartTrack-silver;
+  box-shadow: none;
+
+  ::placeholder {
+    color: $vs-smartTrack-nero-color !important;
+    font-weight: bold;
+  }
+}
+.tableCreateNewVendorButton,
+.tableCreateNewVendorButton:hover,
+.tableCreateNewVendorButton:focus {
+  background-color: $vs-smartTrack-saffron-hover-clr;
+  border-radius: 4px !important;
+  border: 0px;
+  color: $vs-smartTrack-nero-color;
+  font-weight: bold;
+}
+.tableHeadButtons {
+  @include flexBox(row, space-between, none);
+  width: 100%;
+}
+.tableBatchAssignColumnButtonStyle {
+  background-color: $vs-smartTrack-brand-primary;
+  padding: 3px;
+  text-align: center;
+  color: $vs-smartTrack-white;
+  border-radius: 4px;
+  width: 100%;
+  @include flexBox(row, center, flex-end);
+}
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  background-color: $vs-smartTrack-saffron-hover-clr !important;
+  border: 1px solid $vs-smartTrack-saffron-hover-clr;
+}
+.ant-checkbox-checked::after {
+  border-color: $vs-smartTrack-saffron-hover-clr !important;
+}
+.ant-checkbox:hover,
+.ant-checkbox {
+  border-color: $vs-smartTrack-saffron-hover-clr !important;
+}
+.ant-checkbox-inner {
+  border-color: $vs-smartTrack-silver !important;
+}
+
+.ant-pagination-item-active {
+  background-color: $vs-smartTrack-brand-primary;
+  box-shadow: 0px 3px 6px #00000029;
+  a {
+    color: $vs-smartTrack-white !important;
+  }
+}
+.tableBatchArchiveColumnButtonStyle {
+  background-color: $vs-smartTrack-geraldine-color;
+  padding: 3px;
+  text-align: center;
+  color: $vs-smartTrack-white;
+  border-radius: 4px;
+  width: 100%;
+  @include flexBox(row, center, flex-end);
+}
+.tableCard {
+  box-shadow: 0px 3px 6px #0000003f;
+  border-radius: 4px;
+}
+.center-align {
+  @include flexBox(row, center, center);
+}
+.tableCSS {
+  thead {
+    th {
+      padding-right: 0px;
+      border-bottom: 1px solid $vs-smartTrack-brand-primary;
+    }
+  }
+}
+.menuItemDiv {
+  padding-bottom: 20px;
+}
+.menuItemDataDivTag {
+  color: $vs-smartTrack-nero-color !important;
+  font-size: 14px;
+  //font-weight: bold;
+}
+.modalTag {
+  .ant-modal-content {
+    width: 50vw;
+    border-radius: 4px;
+    padding: 30px;
+    @include flexBox(row, center, center);
+    margin: auto;
+  }
+}
+.modalMainDiv {
+  @include flexBox(column, center, center);
+}
+.modalTitle {
+  font-size: 16px;
+  color: $vs-smartTrack-brand-primary;
+  font-weight: bold;
+}
+.modalContent {
+  font-size: 14px;
+  color: $vs-smartTrack-brand-primary;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.modalFooterButtonsDiv {
+  @include flexBox(row, center, center);
+  width: 100%;
+}
+
+.modalCancelButton {
+  border: 1px solid $vs-smartTrack-red-color;
+  color: $vs-smartTrack-red-color;
+  text-align: center;
+  padding: 3px;
+  width: 20vw;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background: none !important;
+    color: $vs-smartTrack-red-color !important;
+    border-color: $vs-smartTrack-red-color !important;
+  }
+}
+
+.modalQrCodeCancelButton {
+  border: 1px solid $vs-smartTrack-red-color;
+  color: $vs-smartTrack-red-color;
+  text-align: center;
+  padding: 3px;
+  width: 15vw;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background: none !important;
+    color: $vs-smartTrack-red-color !important;
+    border-color: $vs-smartTrack-red-color !important;
+  }
+}
+
+.modalArchiveButton {
+  border: 1px solid $vs-smartTrack-saffron-hover-clr;
+  background-color: $vs-smartTrack-saffron-hover-clr;
+  color: $vs-smartTrack-nero-color;
+  text-align: center;
+  padding: 3px;
+  width: 20vw;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background: $vs-smartTrack-saffron-hover-clr !important;
+  }
+}
+
+.modalCreateButton {
+  border: 1px solid $vs-smartTrack-saffron-hover-clr;
+  background-color: $vs-smartTrack-saffron-hover-clr;
+  color: $vs-smartTrack-nero-color;
+  text-align: center;
+  padding: 3px;
+  width: 15vw;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background: $vs-smartTrack-saffron-hover-clr !important;
+  }
+}
+
+.buttonWidthHeight {
+  height: max-content;
+  width: 300px;
+  padding: 6px;
+  border-radius: 4px !important;
+}
+.tableRowFieldData {
+  color: $vs-smartTrack-brand-primary;
+  text-decoration: none;
+
+  font-size: 14px;
+}
+.recordStatusAssigned {
+  color: $vs-smartTrack-white;
+  background-color: $vs-smartTrack-brand-primary;
+  border-radius: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 80px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  @include flexBox(row, center, center);
+}
+.recordStatusUnassigned {
+  color: #707070;
+  border: 1px solid #707070;
+  border-radius: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 80px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  @include flexBox(row, center, center);
+}
+.recordStatusInactive {
+  color: #707070;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 80px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  @include flexBox(row, center, center);
+}
+
+.dashBoardCardTypeTotal {
+  background: transparent linear-gradient(112deg, #e26d5c 0%, #b084cc 100%) 0%
+    0% no-repeat padding-box;
+  h4 {
+    color: #fff;
+  }
+  h1 {
+    color: #fff;
+    font-size: $vs-fontSize-50;
+  }
+}
+
+.dashBoardCardTypeEvent {
+  background: transparent linear-gradient(121deg, #3ddc97 0%, #5bc3eb 100%) 0%
+    0% no-repeat padding-box;
+  h4 {
+    color: #062c41;
+    font-size: $vs-fontSize-14;
+  }
+  h3 {
+    color: #062c41;
+    font-size: $vs-fontSize-24;
+  }
+  h1 {
+    color: #0c2c40;
+    font-size: $vs-fontSize-40;
+  }
+}
+
+.dashBoardCardTypeMostUsed {
+  background: transparent linear-gradient(117deg, #ffffff 0%, #5bc3eb 100%) 0%
+    0% no-repeat padding-box;
+  h4 {
+    color: #062c41;
+    font-size: $vs-fontSize-14;
+  }
+  h3 {
+    color: #062c41;
+    font-size: $vs-fontSize-24;
+  }
+  h1 {
+    color: #0c2c40;
+    font-size: $vs-fontSize-40;
+  }
+}
+
+.dashBoardCardTypeOther {
+  h4 {
+    color: #062c41;
+    font-size: $vs-fontSize-14;
+  }
+  h1 {
+    color: #0c2c40;
+    font-size: $vs-fontSize-40;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tableHeadButtons {
+    @include flexBox(column, space-between, none);
+  }
+  .buttonWidthHeight {
+    height: max-content;
+    width: 200px;
+    padding: 6px;
+  }
+}

@@ -1,0 +1,5 @@
+1. amplify env list
+2. amplify env pull
+3. amplify env checkout pk --restore
+4. amplify add api
+5. amplify push

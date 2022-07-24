@@ -1,0 +1,37 @@
+import React from "react";
+import { Route, Switch, Redirect, withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+import AppLayout from "layouts/app-layout";
+import AppLocale from "lang";
+import { IntlProvider } from "react-intl";
+import { ConfigProvider } from "antd";
+import { APP_PREFIX_PATH } from "configs/AppConfig";
+
+export const Views = (props) => {
+  const { locale, location } = props;
+  const currentAppLocale = AppLocale[locale];
+  return (
+    <IntlProvider
+      locale={currentAppLocale.locale}
+      messages={currentAppLocale.messages}
+    >
+      <ConfigProvider locale={currentAppLocale.antd}>
+        <Switch>
+          <Route exact path="/">
+            <Redirect to="/app/vendors/overview" />
+          </Route>
+          <Route path={APP_PREFIX_PATH}>
+            <AppLayout location={location} />
+          </Route>
+        </Switch>
+      </ConfigProvider>
+    </IntlProvider>
+  );
+};
+
+const mapStateToProps = ({ theme }) => {
+  const { locale } = theme;
+  return { locale };
+};
+
+export default withRouter(connect(mapStateToProps)(Views));

@@ -1,0 +1,62 @@
+@mixin flexBox($flexDirection, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $flexDirection !important;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+.assetTypeModal {
+  .ant-btn {
+    height: max-content;
+    width: 300px;
+    padding: 6px;
+    border-radius: 4px !important;
+    color: #ff6b72;
+    border-color: #ff6b72;
+  }
+
+  .ant-btn.ant-btn-primary {
+    height: max-content;
+    width: 300px;
+    padding: 6px;
+    border-radius: 4px !important;
+    color: #000;
+    background-color: #f4ab33;
+    border-color: #f4ab33;
+    :hover {
+      background-color: #f4ab33;
+    }
+  }
+}
+
+.assetTypeEventModal {
+  .ant-btn {
+    height: max-content;
+    width: 300px;
+    padding: 6px;
+    border-radius: 4px !important;
+    color: #ff6b72;
+    border-color: #ff6b72;
+  }
+
+  .ant-btn.ant-btn-primary {
+    height: max-content;
+    width: 300px;
+    padding: 6px;
+    border-radius: 4px !important;
+    color: #000;
+    background-color: #f4ab33;
+    border-color: #f4ab33;
+    :hover {
+      background-color: #f4ab33;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .buttonWidthHeight {
+    height: max-content;
+    width: 200px;
+    padding: 6px;
+  }
+}

@@ -1,0 +1,44 @@
+.section {
+  box-shadow: none !important;
+  box-sizing: unset !important;
+}
+.add-bg {
+  background-color: white;
+}
+.button {
+  background-color: #f4ab33 !important;
+}
+ul li span {
+  color: #062c41 !important;
+}
+.ant-menu-item-group-list .ant-menu-item-selected,
+.ant-menu-item-group-list .ant-menu-item:hover {
+  background-color: #f2f2f2 !important;
+}
+
+.ant-menu-inline .ant-menu-item::after,
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after {
+  border-right: 3px solid #062c41;
+}
+
+.ant-menu-submenu-title .ant-menu-submenu-arrow,
+.ant-menu-submenu-title .ant-menu-submenu-arrow:hover,
+.ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-active {
+  color: #062c41;
+}
+a {
+  color: #062c41 !important;
+}
+a:hover {
+  color: #f4ab33 !important;
+}
+.ant-pagination li a {
+  color: #ffffff;
+}
+.ant-form-item-label > label {
+  font-size: 12px !important;
+}
